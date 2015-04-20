@@ -9,7 +9,7 @@ SWITCH = 10
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(SWITCH, GPIO.IN)
 
-def hear(phrase):
+def heard(phrase):
 	print "heard:" + phrase
 	for a in phrase:
 		if a == "\r" or a == "\n":
